@@ -1,0 +1,18 @@
+django=3.5
+mysql
+
+
+source travelZ/bin/activate
+
+python manage.py makemigrations
+python manage.py sqlmigrate login 0001
+python manage.py sqlmigrate login 0002
+python manage.py sqlmigrate login 0003
+python manage.py migrate
+
+http://127.0.0.1:8000/admin
+python manage.py createsuperuser
+admin
+Admin@1234
+
+
